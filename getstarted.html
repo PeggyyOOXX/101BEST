@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Get Started</title>
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+
+        <!--swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./assets/js/customize.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand header-logo" href="#">
+                        <img src="./assets/img/101logo.png">
+                    </a>
+                    
+                    <!-- 電腦版導航按鈕 -->
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./responsible.html">Responsible Gaming</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn-getstarted active MOBhide" type="button">
+                            GET STARTED
+                        </button>
+                        <button class="btn btn-nobg dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <img src="./assets/img/icon/en.png">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/img/icon/en.png">English</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/img/icon/vn.png">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/img/icon/th.png">ไทย</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/img/icon/cn.png">简体中文</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                        <img src="./assets/img/icon/moresidebar.png" alt="menu">
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Offcanvas手機版導航按鈕 -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+                <div class="offcanvas-header">
+                    <img src="./assets/img/101logo.png" class="header-logo">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./responsible.html">Responsible Gaming</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                    <button class="btn-getstarted" type="button">
+                        GET STARTED
+                    </button>
+                    <hr>
+                    <div class="socialmedia-group">
+                        <a href="#" class="btn-socialmedia" type="button">
+                            <img src="./assets/img/icon/fb-icon.png">
+                        </a>
+                        <a href="#" class="btn-socialmedia" type="button">
+                            <img src="./assets/img/icon/li-icon.png">
+                        </a>
+                        <a href="#" class="btn-socialmedia" type="button">
+                            <img src="./assets/img/icon/x-icon.png">
+                        </a>
+                        <a href="#" class="btn-socialmedia" type="button">
+                            <img src="./assets/img/icon/yt-icon.png">
+                        </a>
+                        <a href="#" class="btn-socialmedia" type="button">
+                            <img src="./assets/img/icon/ig-icon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="section-getstarted-tab">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-pills col-12 col-md-6 offset-md-3 getstarted-tab-list">
+                        <li class="nav-item">
+                            <button class="nav-link getstarted-tab-listbtn" data-bs-toggle="pill" data-bs-target="#pills-Mobile" type="button">Mobile</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link getstarted-tab-listbtn" data-bs-toggle="pill" data-bs-target="#pills-Desktop" type="button">Desktop</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link getstarted-tab-listbtn active" data-bs-toggle="pill" data-bs-target="#pills-GameLobby" type="button">Game Lobby</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content getstarted-tab-content">
+                <!-- Mobile template -->
+                <div class="tab-pane fade" id="pills-Mobile">
+                    <div class="template-block">
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 01</div>
+                            <img src="./assets/img/mobileUI/mobile1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 02</div>
+                            <img src="./assets/img/mobileUI/mobile2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 03</div>
+                            <img src="./assets/img/mobileUI/mobile3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 04</div>
+                            <img src="./assets/img/mobileUI/mobile4.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 05</div>
+                            <img src="./assets/img/mobileUI/mobile5.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 06</div>
+                            <img src="./assets/img/mobileUI/mobile6.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 07</div>
+                            <img src="./assets/img/mobileUI/mobile7.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 08</div>
+                            <img src="./assets/img/mobileUI/mobile8.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 09</div>
+                            <img src="./assets/img/mobileUI/mobile9.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="mobile-template-group">
+                            <div class="template-title">Mobile UI 10</div>
+                            <img src="./assets/img/mobileUI/mobile10.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop template -->
+                <div class="tab-pane fade" id="pills-Desktop">
+                    <div class="template-block">
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 01</div>
+                            <img src="./assets/img/desktopUI/desktop1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 02</div>
+                            <img src="./assets/img/desktopUI/desktop2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 03</div>
+                            <img src="./assets/img/desktopUI/desktop3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 04</div>
+                            <img src="./assets/img/desktopUI/desktop4.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 05</div>
+                            <img src="./assets/img/desktopUI/desktop5.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 06</div>
+                            <img src="./assets/img/desktopUI/desktop6.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 07</div>
+                            <img src="./assets/img/desktopUI/desktop7.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 08</div>
+                            <img src="./assets/img/desktopUI/desktop8.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 09</div>
+                            <img src="./assets/img/desktopUI/desktop9.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="desktop-template-group">
+                            <div class="template-title">Desktop UI 10</div>
+                            <img src="./assets/img/desktopUI/desktop10.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GameLobby template -->
+                <div class="tab-pane fade show active" id="pills-GameLobby">
+                    <div class="template-block">
+                        <!-- Sports -->
+                        <div class="GameLobby-template-title">Sportsbook</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Sports Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/sports1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Sports Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/sports2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Sports Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/sports3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Live -->
+                        <div class="GameLobby-template-title">Live casino</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Live Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/live1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Live Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/live2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Live Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/live3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Slots -->
+                        <div class="GameLobby-template-title">Slot Games</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Slots Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/slots1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Slots Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/slots2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Slots Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/slots3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Esports -->
+                        <div class="GameLobby-template-title">Esports</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Esports Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/esports1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Esports Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/esports2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Esports Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/esports3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Fishing -->
+                        <div class="GameLobby-template-title">Fishing game</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Fishing Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/fishing1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Fishing Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/fishing2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Fishing Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/fishing3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Lottery -->
+                        <div class="GameLobby-template-title">Lottery</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Lottery Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/lottery1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Lottery Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/lottery2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Lottery Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/lottery3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+
+                        <!-- Chess -->
+                        <div class="GameLobby-template-title">Chess game</div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Chess Lobby UI 01</div>
+                            <img src="./assets/img/lobbyUI/chess1.png" class="template-img">
+                            <button class="template-btn disabled" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Chess Lobby UI 02</div>
+                            <img src="./assets/img/lobbyUI/chess2.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                        <div class="GameLobby-template-group">
+                            <div class="template-title">Chess Lobby UI 03</div>
+                            <img src="./assets/img/lobbyUI/chess3.png" class="template-img">
+                            <button class="template-btn" type="button">Select</button>
+                            <img src="./assets/img/icon/check.png" class="check-img" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <div class="selected-detail">
+            <div class="selectdetail-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Selected options -->
+                        <div class="col-12 col-md-6 selected-options">
+                            <!-- Mobile Template -->
+                            <div class="selected-template-title">Mobile Template</div>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Mobile</div>
+                                    <div class="template-confirmed">Mobile UI 01</div>
+                                    <div class="template-action remove">Remove selection</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Desktop Template -->
+                            <div class="selected-template-title">Desktop Template</div>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Desktop</div>
+                                    <div class="template-confirmed">Desktop UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Lobby Template -->
+                            <div class="selected-template-title">Lobby Template</div>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Sportsbook</div>
+                                    <div class="template-confirmed">Sports Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Live Casino</div>
+                                    <div class="template-confirmed">Live Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Slot Games</div>
+                                    <div class="template-confirmed">Slots Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Esports</div>
+                                    <div class="template-confirmed">Esports Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Fishing Game</div>
+                                    <div class="template-confirmed">Fishing Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Lottery</div>
+                                    <div class="template-confirmed">Lottery Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div><br>
+                            <div class="selected-template-content">
+                                <div class="selected-template-img"></div>
+                                <div class="selected-template-detail">
+                                    <div class="template-type">Chess Games</div>
+                                    <div class="template-confirmed">Chess Lobby UI 01</div>
+                                    <div class="template-action">Browse options</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Site info -->
+                        <div class="col-12 col-md-6 selected-siteinfo">
+                            <div class="selected-siteinfo-title">Your Site Setting</div>
+                            <div>
+                                <div class="siteinfo-blocktitle mt-10">Please complete all fields</div>
+                                <div class="siteinfo-blockcontent">Download your configuration file and provide it to the business specialist When you fill up!</div>
+                            </div>
+                            <div>
+                                <div class="siteinfo-blocktitle mt-10">Basi Information</div>
+                                <input placeholder="Website Name" class="siteinfo-input">
+                                <input placeholder="Website ID" class="siteinfo-input">
+                                <div class="input-remark">Only lowercase letters and numbers are permitted</div>
+                            </div>
+                            <div>
+                                <div class="siteinfo-blocktitle mt-10">Language and Currency</div>
+                                <!-- Select Languages -->
+                                <div class="dropdown siteinfo-dropdown">
+                                    <button  class="dropdown-toggle siteinfo-dropdown-btn" data-bs-toggle="dropdown">
+                                        Select Languages
+                                    </button >
+                                    <ul class="dropdown-menu siteinfo-dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">English<span>EN</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Tiếng Việt<span>VN</span></a></li>
+                                        <li><a class="dropdown-item" href="#">ไทย<span>TH</span></a></li>
+                                        <li><a class="dropdown-item" href="#">简体中文<span>CN</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Select Languages -->
+                                <div class="dropdown siteinfo-dropdown">
+                                    <button  class="dropdown-toggle siteinfo-dropdown-btn" data-bs-toggle="dropdown">
+                                        Select Default Languages
+                                    </button >
+                                    <ul class="dropdown-menu siteinfo-dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">English<span>EN</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Tiếng Việt<span>VN</span></a></li>
+                                        <li><a class="dropdown-item" href="#">ไทย<span>TH</span></a></li>
+                                        <li><a class="dropdown-item" href="#">简体中文<span>CN</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Select Languages -->
+                                <div class="dropdown siteinfo-dropdown">
+                                    <button  class="dropdown-toggle siteinfo-dropdown-btn" data-bs-toggle="dropdown">
+                                        Select Currency
+                                    </button >
+                                    <ul class="dropdown-menu siteinfo-dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">US Dollar<span>USD</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Vietnam Dong<span>VND</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Thai Baht<span>THB</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Chinese Yuan<span>CNY</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Select Languages -->
+                                <div class="dropdown siteinfo-dropdown">
+                                    <button  class="dropdown-toggle siteinfo-dropdown-btn" data-bs-toggle="dropdown">
+                                        Select Country Tel. Code
+                                    </button >
+                                    <ul class="dropdown-menu siteinfo-dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Vietnam<span>+84</span></a></li>
+                                        <li><a class="dropdown-item" href="#">Thailand<span>+66</span></a></li>
+                                        <li><a class="dropdown-item" href="#">China<span>+86</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- finished btn -->
+                                <div class="finishedbtnBox">
+                                    <button class="siteinfo-download-btn" type="button"> Download </button>
+                                    <button class="siteinfo-cancel-btn" type="button"> Cancel </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close-selected-detail">
+                <img src="./assets/img/icon/close.png" class="">
+            </button>
+        </div>
+
+
+
+        <section class="section-bestplat">
+            <div class="bestplat-sigmalogo"><img src="./assets/img/sigmalogo.png"></div>
+            <div class="bestplat-content">
+                <div>BEST PLATFORM PROVIDER NEWCOMER 2024</div>
+                <img src="./assets/img/best-decorate.png"></div>
+            </div>
+        </section>
+
+        <section class="section-copyright">
+            <div class="copyright-101logo"><img src="./assets/img/101logo.png"></div>
+            <div class="copyright-content">
+                <div>Lorem ipsum dolor sit amet consectetur. Leo et nunc amet eget sed consectetur. Facilisis aliquet erat nisi feugiat arcu tellus aliquam. Dui nibh condimentum nibh arcu. Sit justo suscipit ornare enim urna. Maecenas quam lobortis turpis viverra ac. Dolor malesuada velit purus tortor pretium. Ornare sit fames euismod tincidunt convallis viverra diam enim vulputate. Risus fringilla ullamcorper eget id aliquam laoreet faucibus. Lacinia dolor hac orci accumsan at eget vitae venenatis. Lorem ipsum dolor sit amet consectetur. Leo et nunc amet eget sed consectetur. Facilisis aliquet erat nisi feugiat arcu tellus aliquam. Dui nibh condimentum nibh arcu. Sit justo suscipit ornare enim urna. Maecenas quam lobortis turpis viverra ac. Dolor malesuada velit purus tortor pretium. Ornare sit fames euismod tincidunt convallis viverra diam enim vulputate. Risus fringilla ullamcorper eget id aliquam laoreet faucibus. Lacinia dolor hac orci accumsan at eget vitae venenatis.</div> 
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="copyright-socialmedia col-12 col-md-6">
+                        <div>Follow us</div>
+                        <div class="">
+                            <a href="#" class="btn-socialmedia" type="button">
+                                <img src="./assets/img/icon/fb-icon.png">
+                            </a>
+                            <a href="#" class="btn-socialmedia" type="button">
+                                <img src="./assets/img/icon/li-icon.png">
+                            </a>
+                            <a href="#" class="btn-socialmedia" type="button">
+                                <img src="./assets/img/icon/x-icon.png">
+                            </a>
+                            <a href="#" class="btn-socialmedia" type="button">
+                                <img src="./assets/img/icon/yt-icon.png">
+                            </a>
+                            <a href="#" class="btn-socialmedia" type="button">
+                                <img src="./assets/img/icon/ig-icon.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright-cooperate col-12 col-md-6">
+                        <img src="./assets/img/age18.png">
+                        <img src="./assets/img/gamstop-.png">
+                        <img src="./assets/img/gambleaware-.png">
+                        <img src="./assets/img/gamcare-.png">
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>Copyright © 2024 101 BW. All rights reserved.</div>
+        </footer>
+
+        <div class="floatingBox MOBhide">
+            <a href="./home.html" class="floating-btn">
+                <img src="./assets/img/icon/floating-home.png">
+                <span>Home</span>
+            </a>
+            <a href="./responsible.html" class="floating-btn">
+                <img src="./assets/img/icon/floating-responsible.png">
+                <span>Responsible<br>Gaming</span>
+            </a>
+            <a href="./about.html" class="floating-btn">
+                <img src="./assets/img/icon/floating-about.png">
+                <span>About Us</span>
+            </a>
+            <a href="./contact.html" class="floating-btn">
+                <img src="./assets/img/icon/floating-contact.png">
+                <span>Contact Us</span>
+            </a>
+            <a href="./contact.html" class="floating-btn">
+                <img src="./assets/img/icon/floating-getstart.png">
+                <span>Get Started</span>
+            </a>
+        </div>
+        
+
+        
+    </body>
+</html>
