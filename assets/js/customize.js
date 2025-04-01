@@ -18,8 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener("click", () => {
       const tabPane = button.closest(".tab-pane");
       const templateBlock = tabPane.querySelector(".template-block");
-      templateBlock.classList.add("shift-left");
-      document.querySelector(".selected-detail").classList.add("show");
+      const selectedDetail = document.querySelector(".selected-detail");
+
+      if (window.innerWidth > 768) {   //電腦版
+        templateBlock.classList.add("shift-left");
+      }
+      if (window.innerWidth <= 767) {   //手機版
+        selectedDetail.style.right = "auto";  
+      }
+      selectedDetail.classList.add("show");
     });
   });
   document.querySelectorAll(".close-selected-detail, .siteinfo-download-btn, .siteinfo-cancel-btn").forEach(button => {
