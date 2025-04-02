@@ -192,12 +192,14 @@ a{
 .home-responsible-btn{
     display: block;
     margin: 20px auto;
+    width: 200px;
     text-align: center;
     background: rgba(92, 157, 242, 1);
     color: #fff;
     border-radius: 8px;
     border: none;
     padding: 8px 25px;
+    font-size: unset;
 }
 /*--- home-aboutjoin ---*/
 .section-home-aboutjoin{
@@ -233,6 +235,7 @@ a{
 .home-aboutjoin-btn{
     display: block;
     margin: 50px auto;
+    width: 200px;
     text-align: center;
     background: rgba(92, 157, 242, 1);
     color: #fff;
